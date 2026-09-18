@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: jdbc:mysql://${TEST_DB_HOST:127.0.0.1}:${TEST_DB_PORT:3306}/meet_room_test?connectionTimeZone=Asia/Shanghai&characterEncoding=UTF-8
+    username: meet_room_test
+    password: ${TEST_DB_PASSWORD}
+  sql:
+    init:
+      mode: never
